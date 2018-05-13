@@ -34,11 +34,35 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary: #3E4D66,
+  secondary: #7482A6,
+  special: #EBE4CB,
+  white: #FFFFFF,
+  black: #211A1D,
+);
+
+$profile: (
+  primary: color($colors, primary),
+  secondary: color($colors, secondary),
+  special: color($colors, special),
+  // ---------------------------
+  orange: #FF6C3F,
+  yellow: #FFFD93,
+  cyan: #1FE0D0,
+  magenta: #FF3F7F,
+  green: #D8F793,
+  // ---------------------------
+  white: color($colors, white),
+  black: color($colors, black),
+);
+
+$werewolf: (
+  good: #2A4E71,
+  evil: #9A363E,
+  vampire: #5A3C5F,
+  cult: #365231,
+  neutral: #915233,
+  other: #6E444E
 );
 
 
