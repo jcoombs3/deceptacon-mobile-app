@@ -1,0 +1,10 @@
+button[ion-button] {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-transform: uppercase;
+}
+
+button[ion-button][class$="-special"],
+button[ion-button][class*="-special "] {
+  color: color($colors, primary);
+}

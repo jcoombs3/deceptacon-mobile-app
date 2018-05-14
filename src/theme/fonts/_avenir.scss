@@ -1,0 +1,189 @@
+$avenir: "Avenir", Arial, Helvetica, sans-serif !default;
+$avenir-path: "#{$font-path}/avenir" !default;
+
+@mixin avenir() {
+  /*
+  * @license
+  * MyFonts Webfont Build ID 2946162, 2014-12-31T14:06:40-0500
+  *
+  * The fonts listed in this notice are subject to the End User License
+  * Agreement(s) entered into by the website owner. All other parties are
+  * explicitly restricted from using the Licensed webfont(s).
+  *
+  * You may obtain a valid license at the URLs below. 
+  *
+  * Webfont: AvenirLT-Medium by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/65-medium/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-Roman by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/55-roman/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-MediumOblique by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/65-mediumoblique/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-BookOblique by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/45-book-oblique/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-Black by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/95-black/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-HeavyOblique by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/85-heavy-oblique/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-Book by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/45-book/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-Light by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/35-light/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-BlackOblique by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/95-black-oblique/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-LightOblique by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/35-light-oblique/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-Oblique by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/55-oblique/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: AvenirLT-Heavy by Linotype
+  * URL: http://www.myfonts.com/fonts/linotype/avenir/85-heavy/
+  * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 1981 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be repro
+  *
+  * Webfont: ClarendonCondensed by Monotype
+  * URL: http://www.myfonts.com/fonts/mti/clarendon/condensed/
+  * Copyright: Copyright &#x00A9; 1994 Miles Inc. All rights reserved.
+  *
+  *
+  * License: http://www.myfonts.com/viewlicense?type=web&buildid=2946162
+  * Licensed pageviews: 6,000,000
+  *
+  * © 2014 MyFonts Inc
+  */
+  // this has been moved into a link in the site template to facilitate parallel downloads
+  //@import url("//hello.myfonts.net/count/2cf472");
+
+  // NOTE: the myfonts.com pack includes eot fonts by default, but we've removed them as we're only supporting IE9+ and the eot file it generated for Clarendon caused errors in IE anyway
+
+  $avenir: nth($avenir, 1);
+
+  //light
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_7_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_7_0.woff") format("woff"), 
+        url("#{$avenir-path}/2CF472_7_0.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  //book
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_6_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_6_0.woff") format("woff"), 
+        url("#{$avenir-path}/2CF472_6_0.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  //Roman
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_1_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_1_0.woff") format("woff"), 
+          url("#{$avenir-path}/2CF472_1_0.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  //Medium
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_0_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_0_0.woff") format("woff"), 
+          url("#{$avenir-path}/2CF472_0_0.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  // heavy
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_B_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_B_0.woff") format("woff"), 
+          url("#{$avenir-path}/2CF472_B_0.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  //black
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_4_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_4_0.woff") format("woff"), 
+        url("#{$avenir-path}/2CF472_4_0.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  //light oblique
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_9_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_9_0.woff") format("woff"), 
+        url("#{$avenir-path}/2CF472_9_0.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  // book oblique
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_A_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_A_0.woff") format("woff"), 
+          url("#{$avenir-path}/2CF472_A_0.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  //Medium Oblique
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_2_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_2_0.woff") format("woff"), 
+          url("#{$avenir-path}/2CF472_2_0.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  //heavy oblique
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_5_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_5_0.woff") format("woff"), 
+        url("#{$avenir-path}/2CF472_5_0.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  //black oblique
+  @font-face {
+    font-family: $avenir;
+    src: url("#{$avenir-path}/2CF472_8_0.woff2") format("woff2"), 
+          url("#{$avenir-path}/2CF472_8_0.woff") format("woff"), 
+          url("#{$avenir-path}/2CF472_8_0.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+  }
+}

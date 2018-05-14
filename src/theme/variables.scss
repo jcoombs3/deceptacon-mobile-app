@@ -37,6 +37,7 @@ $colors: (
   primary: #3E4D66,
   secondary: #7482A6,
   special: #EBE4CB,
+  highlight: #FF6C3F,
   white: #FFFFFF,
   black: #211A1D,
 );
@@ -46,7 +47,7 @@ $profile: (
   secondary: color($colors, secondary),
   special: color($colors, special),
   // ---------------------------
-  orange: #FF6C3F,
+  orange: color($colors, highlight),
   yellow: #FFFD93,
   cyan: #1FE0D0,
   magenta: #FF3F7F,
@@ -108,5 +109,5 @@ $werewolf: (
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
+// @import "roboto";
+// @import "noto-sans";
