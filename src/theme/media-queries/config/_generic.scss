@@ -1,0 +1,129 @@
+/* --------------------------------------- */
+// This is under the impression Phone's will be locked in portrait mode for applications.
+/* --------------------------------------- */
+
+/* --------------------------------------- */
+// For Small Phones -- use $Mobile_sm
+/* 
+  [--------]  $Mobile_sm
+  |        |  
+  |        |  "screen", "<=320px", "portrait"
+  |        |  @media only screen
+  |        |    and (max-device-width: 320px) 
+  |        |    and (orientation: portrait) { }
+  |        |    
+  |  [  ]  |    
+  [--------]    
+
+  $Mobile_sm
+*/
+
+$Mobile_sm: "screen", "<=320px", "portrait";
+
+/* --------------------------------------- */
+// For Medium Phones -- use $Mobile_md
+/* 
+  [--------]  $Mobile_md
+  |        |  
+  |        |  "screen", "<=375px", "portrait"
+  |        |  @media only screen
+  |        |    and (max-device-width: 375px) 
+  |        |    and (orientation: portrait) { }
+  |        |    
+  |  [  ]  |    
+  [--------]    
+
+  $Mobile_md
+*/
+
+$Mobile_md: "screen", "<=375px", "portrait";
+
+/* --------------------------------------- */
+// For Large Phones -- use $Mobile_lg
+/* 
+  [--------]  $Mobile_lg
+  |        |  
+  |        |  "screen", "<=600px", "portrait"
+  |        |  @media only screen
+  |        |    and (max-device-width: 600px) 
+  |        |    and (orientation: portrait) { }
+  |        |    
+  |  [  ]  |    
+  [--------]    
+
+  $Mobile_lg
+*/
+
+$Mobile_lg: "screen", "<=600px", "portrait";
+
+/* --------------------------------------- */
+// For Small Tablets -- use $Tablet_sm
+/* 
+  [----------]  $Device_Tablet_sm 
+  |          |  
+  |          |  "screen", ">=601px", "<=1024px";
+  |    SM    |  @media only screen
+  |          |    and (min-device-width: 601px) 
+  |          |    and (max-device-width: 1024px) { }
+  |          |
+  |   [  ]   |    
+  [----------]    
+
+  $Tablet_sm
+*/
+
+$Tablet_sm: "screen", ">=601px", "<=1024px";
+
+/* --------------------------------------- */
+// For Medium Tablets -- use $Tablet_md
+/* 
+  [----------]  $Tablet_md
+  |          |  
+  |          |  "screen", ">=800px", "<=1280px";
+  |    MD    |  @media only screen
+  |          |    and (min-device-width: 800px) 
+  |          |    and (max-device-width: 1280px) { }
+  |          |
+  |   [  ]   |    
+  [----------]    
+
+  $Tablet_md
+*/
+
+$Tablet_md: "screen", ">=800px", "<=1280px";
+
+/* --------------------------------------- */
+// For Large Tablets -- use $Tablet_lg
+/* 
+  [----------]  $Tablet_lg
+  |          |  
+  |          |  "screen", ">=1200px", "<=1600px";
+  |    LG    |  @media only screen
+  |          |    and (min-device-width: 1200px) 
+  |          |    and (max-device-width: 1600px) { }
+  |          |
+  |   [  ]   |    
+  [----------]    
+
+  $Tablet_lg
+*/
+
+$Tablet_lg: "screen", ">=1200px", "<=1600px";
+
+/* --------------------------------------- */
+// For Extra-Large Tablets -- use $Tablet_xl
+/* 
+  [----------]  $Tablet_xl
+  |          |  
+  |          |  "screen", ">=1536px", "<=2048px";
+  |    XL    |  @media only screen
+  |          |    and (min-device-width: 1536px) 
+  |          |    and (max-device-width: 2048px) { }
+  |          |
+  |   [  ]   |    
+  [----------]    
+
+  $Tablet_xl
+*/
+
+$Tablet_xl: "screen", ">=1536px", "<=2048px";

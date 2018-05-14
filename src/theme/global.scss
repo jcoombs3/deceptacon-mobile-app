@@ -34,10 +34,12 @@ button[ion-button][class*="-special "] {
 .toolbar-title {
   color: color($colors, white);
   overflow: visible;
+  text-transform: uppercase;
 }
 
 .bar-buttons button {
-  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
   color: color($colors, white);
   
   &[icon-only] {

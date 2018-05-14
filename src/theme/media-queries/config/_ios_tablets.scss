@@ -1,0 +1,126 @@
+/* --------------------------------------- */
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+$ios_ipad_portrait: "screen", "w_768px", "h_1024px", "portrait";
+$ios_ipad_landscape: "screen", "h_768px", "w_1024px", "landscape";
+
+// For iPad 1, 2, Mini and Air -- 
+// use $iPad_sm // $iPad_sm_portrait // $iPad_sm_landscape
+/* 
+  [----------]  $iPad_sm // $iPad_sm_portrait // $iPad_sm_landscape
+  |          |  
+  |          |  "screen", "w_768px", "h_1024px";
+  |    R1    |  @media only screen
+  |          |    and (device-width: 768px) 
+  |          |    and (device-height: 1024px)
+  |          |    and (orientation: portrait) { }
+  |   [  ]   |    
+  [----------]    
+
+  $iPad_sm
+  $iPad_sm_portrait
+  $iPad_sm_landscape
+*/
+
+$iPad_sm: $ios_ipad_portrait;
+$iPad_sm_portrait: $ios_ipad_portrait;
+$iPad_sm_landscape: $ios_ipad_landscape;
+
+/* --------------------------------------- */
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+$ios_tab_r2_portrait: $ios_ipad_portrait, "retina2x";
+$ios_tab_r2_landscape: $ios_ipad_landscape, "retina2x";
+
+// For iPad 3, 4 and Pro 9.7" -- 
+// use $iPad_sm_R2 // $iPad_sm_R2_portrait // $iPad_sm_R2_landscape
+// only difference is that these tablets have a pixel-ratio of '2'
+/* 
+  [----------]  $iPad_sm_R2 // $iPad_sm_R2_portrait // $iPad_sm_R2_landscape
+  |          |  
+  |          |  "screen", "w_768px", "h_1024px";
+  |    R2    |  @media only screen
+  |          |    and (device-width: 768px) 
+  |          |    and (device-height: 1024px)
+  |          |    and (device-pixel-ratio: 2)
+  |   [  ]   |    and (orientation: portrait) { }
+  [----------]    
+
+  $iPad_sm_R2
+  $iPad_sm_R2_portrait
+  $iPad_sm_R2_landscape
+*/
+
+$iPad_sm_R2: $ios_tab_r2_portrait;
+$iPad_sm_R2_portrait: $ios_tab_r2_portrait;
+$iPad_sm_R2_landscape: $ios_tab_r2_landscape;
+
+/* --------------------------------------- */
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+$ios_pro_10_5_portrait: "screen", ">=834px", "<=834px", "retina2x", "portrait";
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+$ios_pro_10_5_landscape: "screen", ">=1112px", "<=1112px", "retina2x", "landscape";
+
+// For iPad Pro 10.5" -- use $iPad_md // $iPad_md_portrait // $iPad_md_landscape
+/* 
+  [----------]  $iPad_md // $iPad_md_portrait // $iPad_md_landscape
+  |          |  
+  |   10.5   |  "screen", ">=834px", "<=834px", "retina2x", "portrait";
+  |    R2    |  @media only screen
+  |          |    and (min-device-width: 834px) 
+  |          |    and (max-device-width: 834px)
+  |          |    and (device-pixel-ratio: 2)
+  |   [  ]   |    and (orientation: portrait) { }
+  [----------]    
+
+  $iPad_md
+  $iPad_md_portrait
+  $iPad_md_landscape
+*/
+
+$iPad_md: $ios_pro_10_5_portrait;
+$iPad_md_portrait: $ios_pro_10_5_portrait;
+$iPad_md_landscape: $ios_pro_10_5_landscape;
+
+/* --------------------------------------- */
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+$ios_pro_12_9_portrait: "screen", ">=1024px", "<=1024px", "retina2x", "portrait";
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+$ios_pro_12_9_landscape: "screen", ">=1366px", "<=1366px", "retina2x", "landscape";
+
+// For iPad Pro 10.5" -- use $iPad_lg // $iPad_lg_portrait // $iPad_lg_landscape
+/* 
+  [----------]  $iPad_lg // $iPad_lg_portrait // $iPad_lg_landscape
+  |          |  
+  |   12.9   |  "screen", ">=1024px", "<=1024px", "retina2x", "portrait";
+  |    R2    |  @media only screen
+  |          |    and (min-device-width: 1024px) 
+  |          |    and (max-device-width: 1024px)
+  |          |    and (device-pixel-ratio: 2)
+  |   [  ]   |    and (orientation: portrait) { }
+  [----------]    
+
+  $iPad_lg
+  $iPad_lg_portrait
+  $iPad_lg_landscape
+*/
+
+$iPad_lg: $ios_pro_12_9_portrait;
+$iPad_lg_portrait: $ios_pro_12_9_portrait;
+$iPad_lg_landscape: $ios_pro_12_9_landscape;
+
+/* --------------------------------------- */

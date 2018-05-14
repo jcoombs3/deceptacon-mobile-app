@@ -1,0 +1,81 @@
+@import "config/include-media";
+@import "config/ios";
+@import "config/ios_tablets";
+@import "config/android";
+@import "config/android_tablets";
+@import "config/generic";
+
+/* --------------- Instructions --------------- */
+/*
+  To use these media queries, instruct with mixin syntax
+  followed by 3 dots (...)
+
+      @include media($iPhone_X...) {
+        background: #fff;
+        color: blue;
+      }
+
+  default orientation is "portrait"
+  for "landscape", add _landscape to end of variable 
+
+      @include media($iPhone_X_landscape...) {
+        background: blue;
+        color: #fff;
+      }
+      @include media($Android_R3_landscape...) {
+        background: pink;
+        color: #fff;
+      }
+*/
+
+/* ------------------ Variables -------------------- */
+/*
+// Orientation
+$portrait:    all devices in portrait orientation (default)
+$landscape:   all devices in landscape orientation
+
+// Generic 
+$Mobile_sm: max-width: 320px
+$Mobile_md: max-width: 375px
+$Mobile_lg: max-width: 600px (highest is 414px with iPhone+)
+
+$Tablet_sm: 601px <---> 1024px 
+$Tablet_md: 800px <---> 1280px 
+$Tablet_lg: 1200px <---> 1600px 
+$Tablet_xl: 1536px <---> 2048px 
+
+// iOS Phones
+$iPhone_4:    width: 320px | height: 480px | pixel-ratio: 2
+$iPhone_5:    width: 320px | height: 568px | pixel-ratio: 2
+$iPhone:      width: 375px | height: 667px | pixel-ratio: 2
+  - for regular iPhone devices starting with iPhone 6
+$iPhone_Plus: width: 414px | height: 736px | pixel-ratio: 3
+  - for all iPhone Plus devices starting with iPhone 6+ 
+$iPhone_X:    width: 375px | height: 812px | pixel-ratio: 3
+
+// iOS Tablets 
+$iPad_sm:     width: 768px | height: 1024px | pixel-ratio: 1
+  - for iPad 1, 2, Mini and Air
+  - to target all iPad 1-4, Mini, Air and Pro 9.7" with no retina check,  use $iPad_sm
+$iPad_sm_R2:  width: 768px | height: 1024px | pixel-ratio: 2
+  - for iPad 3, 4 and Pro 9.7"
+  - to target all iPad 1-4, Mini, Air and Pro 9.7" with no retina check,  use $iPad_sm
+$iPad_md:     width: 834px | height: 1112px | pixel-ratio: 2
+$iPad_lg:     width: 1024px | height: 1366px | pixel-ratio: 2
+
+// Android Phones
+$Android_R2:  width: 320px | height: 640px | pixel-ratio: 2
+  - Samsung Galaxy S3
+$Android_R3:  width: 320px | height: 640px | pixel-ratio: 3
+  - Samsung Galaxy S4 / S5 / Note 3 / Google Pixel / Note 3
+$Android_R4:  width: 320px | height: 640px | pixel-ratio: 4
+  - Samsung Galaxy S6 / Google Pixel XL
+
+// Android Tablets
+$Android_Nexus7:        width: 601px | height: 906px | min-pr: 1.331 | max-pr: 1.332
+$Android_GalaxyTab2     width: 800px | height: 1280px | pixel-ratio: 1
+$Android_GalaxyTabS     width: 800px | height: 1280px | pixel-ratio: 1 
+$Android_KindleFile7    width: 800px | height: 1280px | pixel-ratio: 1.5
+$Android_KindleFile8_9  width: 1200px | height: 1600px | pixel-ratio: 1.5
+$Android_Nexus9         width: 1536px | height: 2048px | min-pr: 1.331 | max-pr: 1.332
+*/

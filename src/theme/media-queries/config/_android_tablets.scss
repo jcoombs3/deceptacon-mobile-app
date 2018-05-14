@@ -1,0 +1,123 @@
+// For Small Android devices -- 
+// use $Android_Tablet_sm // $Android_Tablet_sm_portrait // $Android_Tablet_sm_landscape
+/* 
+  [----------]  $Android_Tablet_sm // $Android_Tablet_sm_portrait // $Android_Tablet_sm_landscape
+  |          |  
+  |          |  "screen", ">=601px", "<=906px";
+  |    SM    |  @media only screen
+  |          |    and (min-device-width: 601px) 
+  |          |    and (max-device-width: 1024px) { }
+  |          |
+  |   [  ]   |    
+  [----------]    
+
+  $Android_Tablet_sm
+  $Android_Tablet_sm_portrait
+  $Android_Tablet_sm_landscape
+*/
+
+$Android_Tablet_sm: "screen", ">=601px", "<=906px";
+$Android_Tablet_sm_portrait: $Android_Tablet_sm, "portrait";
+$Android_Tablet_sm_landscape: $Android_Tablet_sm, "landscape";
+
+// For Medium Android devices -- 
+// use $Android_Tablet_md // $Android_Tablet_md_portrait // $Android_Tablet_md_landscape
+/* 
+  [----------]  $Android_Tablet_md // $Android_Tablet_md_portrait // $Android_Tablet_md_landscape
+  |          |  
+  |          |  "screen", ">=800", "<=1280";
+  |    MD    |  @media only screen
+  |          |    and (min-device-width: 800) 
+  |          |    and (max-device-width: 1280) { }
+  |          |
+  |   [  ]   |    
+  [----------]    
+
+  $Android_Tablet_md
+  $Android_Tablet_md_portrait
+  $Android_Tablet_md_landscape
+*/
+
+$Android_Tablet_md: "screen", ">=800", "<=1280";
+$Android_Tablet_md_portrait: $Android_Tablet_md, "portrait";
+$Android_Tablet_md_landscape: $Android_Tablet_md, "landscape";
+
+// For Large Android devices -- 
+// use $Android_Tablet_lg // $Android_Tablet_lg_portrait // $Android_Tablet_lg_landscape
+/* 
+  [----------]  $Android_Tablet_lg // $Android_Tablet_lg_portrait // $Android_Tablet_lg_landscape
+  |          |  
+  |          |  "screen", ">=1200", "<=1600";
+  |    LG    |  @media only screen
+  |          |    and (min-device-width: 1200) 
+  |          |    and (max-device-width: 1600) { }
+  |          |
+  |   [  ]   |    
+  [----------]    
+
+  $Android_Tablet_lg
+  $Android_Tablet_lg_portrait
+  $Android_Tablet_lg_landscape
+*/
+
+$Android_Tablet_lg: "screen", ">=1200", "<=1600";
+$Android_Tablet_lg_portrait: $Android_Tablet_lg, "portrait";
+$Android_Tablet_lg_landscape: $Android_Tablet_lg, "landscape";
+
+// For X-Large Android devices -- 
+// use $Android_Tablet_xl // $Android_Tablet_xl_portrait // $Android_Tablet_xl_landscape
+/* 
+  [----------]  $Android_Tablet_xl // $Android_Tablet_xl_portrait // $Android_Tablet_xl_landscape
+  |          |  
+  |          |  "screen", ">=1536", "<=2048";
+  |    XL    |  @media only screen
+  |          |    and (min-device-width: 1536) 
+  |          |    and (max-device-width: 2048) { }
+  |          |
+  |   [  ]   |    
+  [----------]    
+
+  $Android_Tablet_xl
+  $Android_Tablet_xl_portrait
+  $Android_Tablet_xl_landscape
+*/
+
+$Android_Tablet_xl: "screen", ">=1536", "<=2048";
+$Android_Tablet_xl_portrait: $Android_Tablet_xl, "portrait";
+$Android_Tablet_xl_landscape: $Android_Tablet_xl, "landscape";
+
+/* --------------------------------------- */
+/* ----------- Nexus 7 ----------- */
+
+$Android_Nexus7: $Android_Tablet_sm_portrait, "retina_nexus";
+$Android_Nexus7_landscape: $Android_Tablet_sm_landscape, "retina_nexus";
+$Google_Nexus7: $Android_Nexus7;
+$Google_Nexus7_landscape: $Android_Nexus7_landscape;
+
+/* --------------------------------------- */
+/* ----------- Galaxy Tab 2 & S ----------- */
+
+$Android_GalaxyTab2: $Android_Tablet_md_portrait;
+$Android_GalaxyTab2_landscape: $Android_Tablet_md_landscape;
+$Android_GalaxyTabS: $Android_GalaxyTab2;
+$Android_GalaxyTabS_landscape: $Android_GalaxyTab2_landscape;
+
+/* --------------------------------------- */
+/* ----------- Kindle Fire HD 7" ----------- */
+
+$Android_KindleFile7: $Android_Tablet_md_portrait, "retina_kindle";
+$Android_KindleFile7_landscape: $Android_Tablet_md_landscape, "retina_kindle";
+
+/* --------------------------------------- */
+/* ----------- Kindle Fire HD 8.9" ----------- */
+
+$Android_KindleFile8_9: $Android_Tablet_lg_portrait, "retina_kindle";
+$Android_KindleFile8_9_landscape: $Android_Tablet_lg_landscape, "retina_kindle";
+
+/* --------------------------------------- */
+/* ----------- Nexus 9 ----------- */
+
+$Android_Nexus9: $Android_Tablet_xl_portrait, "retina_nexus";
+$Android_Nexus9_landscape: $Android_Tablet_xl_landscape, "retina_nexus";
+$Google_Nexus9: $Android_Nexus9;
+$Google_Nexus9_landscape: $Android_Nexus9_landscape;

@@ -1,0 +1,87 @@
+/* --------------------------------------- */
+/* ----------- Galaxy S3 ----------- */ 
+
+$android_retina2_portrait: "screen", "w_320px", "h_640px", "retina2x", "portrait";
+$android_retina2_landscape: "screen", "h_320px", "w_640px", "retina2x", "landscape";
+
+// For Samsung Galaxy S3 -- 
+// use $Android_R2 // $Android_R2_portrait // $Android_R2_landscape
+/* 
+  [--------]  $Android_R2 // $Android_R2_portrait // $Android_R2_landscape
+  |        |  
+  |        |  "screen", "w_320px", "h_640px", "retina2x";
+  |        |  @media only screen
+  |        |    and (device-width: 320px) 
+  |        |    and (device-height: 640px)
+  |        |    and (-webkit-min-device-pixel-ratio: 2) 
+  |  [  ]  |    and (orientation: portrait) { }
+  [--------]    
+
+  $Android_R2
+  $Android_R2_portrait
+  $Android_R2_landscape
+*/
+
+$Android_R2: $android_retina2_portrait;
+$Android_R2_portrait: $android_retina2_portrait;
+$Android_R2_landscape: $android_retina2_landscape;
+
+/* --------------------------------------- */
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* ----------- Google Pixel ----------- */
+/* ----------- HTC One ----------- */
+
+$android_retina3_portrait: "screen", "w_320px", "h_640px", "retina3x", "portrait";
+$android_retina3_landscape: "screen", "h_320px", "w_640px", "retina3x", "landscape";
+
+// For Samsung Galaxy S4, S5, Note 3, Google Pixel, and HTC One -- 
+// use $Android_R3 // $Android_R3_portrait // $Android_R3_landscape
+/* 
+  [--------]  $Android_R3 // $Android_R3_portrait // $Android_R3_landscape
+  |        |  
+  |        |  "screen", "w_320px", "h_640px", "retina3x";
+  |        |  @media only screen
+  |        |    and (device-width: 320px) 
+  |        |    and (device-height: 640px)
+  |        |    and (-webkit-min-device-pixel-ratio: 3) 
+  |  [  ]  |    and (orientation: portrait) { }
+  [--------]    
+
+  $Android_R3
+  $Android_R3_portrait
+  $Android_R3_landscape
+*/
+
+$Android_R3: $android_retina3_portrait;
+$Android_R3_portrait: $android_retina3_portrait;
+$Android_R3_landscape: $android_retina3_landscape;
+
+/* ----------- Galaxy S6 ----------- */
+/* ----------- Google Pixel XL ----------- */
+
+$android_retina4_portrait: "screen", "w_320px", "h_640px", "retina4x", "portrait";
+$android_retina4_landscape: "screen", "h_320px", "w_640px", "retina4x", "landscape";
+
+// For Samsung Galaxy S6 and Google Pixel XL -- 
+// use $Android_R4 // $Android_R4_portrait // $Android_R4_landscape
+/* 
+  [--------]  $Android_R4 // $Android_R4_portrait // $Android_R4_landscape
+  |        |  
+  |        |  "screen", "w_320px", "h_640px", "retina4x";
+  |        |  @media only screen
+  |        |    and (device-width: 320px) 
+  |        |    and (device-height: 640px)
+  |        |    and (-webkit-min-device-pixel-ratio: 4) 
+  |  [  ]  |    and (orientation: portrait) { }
+  [--------]    
+
+  $Android_R4
+  $Android_R4_portrait
+  $Android_R4_landscape
+*/
+
+$Android_R4: $android_retina4_portrait;
+$Android_R4_portrait: $android_retina4_portrait;
+$Android_R4_landscape: $android_retina4_landscape;
+
+/* --------------------------------------- */

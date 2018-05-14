@@ -1,0 +1,139 @@
+/* --------------------------------------- */
+/* ----------- iPhone 4 and 4S ----------- */
+
+$ios_4_portrait: "screen", "w_320px", "h_480px", "retina2x", "portrait";
+$ios_4_landscape: "screen", "h_320px", "w_480px", "retina2x", "landscape";
+
+// For iPhone 4 and 4S -- use $iPhone_4 // $iPhone_4_portrait // $iPhone_4_landscape
+/* 
+  [--------]  $iPhone_4 // $iPhone_4_portrait // $iPhone_4_landscape
+  |        |  
+  |        |  "screen", "w_320px", "h_480px", "retina2x";
+  |        |  @media only screen
+  |        |    and (device-width: 320px) 
+  |        |    and (device-height: 480px)
+  |        |    and (-webkit-min-device-pixel-ratio: 2) 
+  |  [  ]  |    and (orientation: portrait) { }
+  [--------]    
+
+  $iPhone_4
+  $iPhone_4_portrait
+  $iPhone_4_landscape
+*/
+
+$iPhone_4: $ios_4_portrait;
+$iPhone_4_portrait: $ios_4_portrait;
+$iPhone_4_landscape: $ios_4_landscape;
+
+/* --------------------------------------- */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+$ios_5_portrait: "screen", "w_320px", "h_568px", "retina2x", "portrait";
+$ios_5_landscape: "screen", "h_320px", "w_568px", "retina2x", "landscape";
+
+// For iPhone 5, 5S, 5C and 5SE -- use $iPhone_5 // $iPhone_5_portrait // $iPhone_5_landscape
+/* 
+  [--------]  $iPhone_5 // $iPhone_5_portrait // $iPhone_5_landscape
+  |        |  
+  |        |  "screen", "w_320px", "h_568px", "retina2x";
+  |        |  @media only screen
+  |        |    and (device-width: 320px) 
+  |        |    and (device-height: 568px)
+  |        |    and (-webkit-min-device-pixel-ratio: 2)
+  |  [  ]  |    and (orientation: portrait) { }
+  [--------]    
+
+  $iPhone_5
+  $iPhone_5_portrait
+  $iPhone_5_landscape
+*/
+
+$iPhone_5: $ios_5_portrait;
+$iPhone_5_portrait: $ios_5_portrait;
+$iPhone_5_landscape: $ios_5_landscape;
+
+/* --------------------------------------- */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+$ios_portrait: "screen", "w_375px", "h_667px", "retina2x";
+$ios_landscape: "screen", "h_375px", "w_667px", "retina2x";
+
+// For iPhone 6, 6S, 7 and 8 -- use $iPhone // $iPhone_portrait // $iPhone_landscape
+/* 
+  [--------]  $iPhone // $iPhone_portrait // $iPhone_landscape
+  |        |  
+  |        |  "screen", "w_375px", "h_667px", "retina2x";
+  |        |  @media only screen
+  |        |    and (device-width: 375px) 
+  |        |    and (device-height: 667px)
+  |        |    and (-webkit-min-device-pixel-ratio: 2) 
+  |  [  ]  |    and (orientation: portrait) { }
+  [--------]   
+
+  $iPhone
+  $iPhone_portrait
+  $iPhone_landscape
+*/
+
+$iPhone: $ios_portrait;
+$iPhone_portrait: $ios_portrait;
+$iPhone_landscape: $ios_landscape;
+
+/* --------------------------------------- */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+$ios_plus_portrait: "screen", "w_414px", "h_736px", "retina3x", "portrait";
+$ios_plus_landscape: "screen", "w_414px", "h_736px", "retina3x", "landscape";
+
+// For iPhone 6+, 7+ and 8+ -- use $iPhone_Plus // $iPhone_Plus_portrait // $iPhone_Plus_landscape
+/* 
+  [--------]  $iPhone_Plus // $iPhone_Plus_portrait // $iPhone_Plus_landscape
+  |        |  
+  |        |  "screen", "w_414px", "h_736px", "retina3x";
+  |        |  @media only screen
+  |        |    and (device-width: 414px) 
+  |        |    and (device-height: 736px)
+  |        |    and (-webkit-min-device-pixel-ratio: 3)
+  |  [  ]  |    and (orientation: portrait) { }
+  [--------]    
+
+  $iPhone_Plus
+  $iPhone_Plus_portrait
+  $iPhone_Plus_landscape
+*/
+
+$iPhone_Plus: $ios_plus_portrait;
+$iPhone_Plus_portrait: $ios_plus_portrait;
+$iPhone_Plus_landscape: $ios_plus_landscape;
+
+/* --------------------------------------- */
+/* ----------- iPhone X ----------- */
+
+$ios_x_portrait: "screen", "w_375px", "h_812px", "retina3x", "portrait";
+$ios_x_landscape: "screen", "h_375px", "w_812px", "retina3x", "landscape";
+
+// For iPhone X or 10 -- use $iPhone_X // $iPhone_X_portrait // $iPhone_X_landscape
+/* 
+  [--------]  $iPhone_X // $iPhone_X_portrait // $iPhone_X_landscape
+  |        |  
+  |        |  "screen", "w=375px", "h=812px", "retina3x";
+  |        |  @media only screen
+  |        |    and (device-width: 375px) 
+  |        |    and (device-height: 812px)
+  |        |    and (-webkit-min-device-pixel-ratio: 3)
+  |  [  ]  |    and (orientation: portrait) { }    
+  [--------]    
+
+  $iPhone_X
+  $iPhone_X_portrait
+  $iPhone_X_landscape
+*/
+
+$iPhone_X: $ios_x_portrait;
+$iPhone_X_portrait: $ios_x_portrait;
+$iPhone_X_landscape: $ios_x_landscape;
+$iPhone_10: $ios_x_portrait;
+$iPhone_10_portrait: $ios_x_portrait;
+$iPhone_10_landscape: $ios_x_landscape;
+
+/* --------------------------------------- */
