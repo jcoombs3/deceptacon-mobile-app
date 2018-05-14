@@ -1,3 +1,6 @@
+// ion-button
+// https://ionicframework.com/docs/api/components/button/Button/
+
 button[ion-button] {
   padding-left: 30px;
   padding-right: 30px;
@@ -7,4 +10,37 @@ button[ion-button] {
 button[ion-button][class$="-special"],
 button[ion-button][class*="-special "] {
   color: color($colors, primary);
+}
+
+// ion-header
+// https://ionicframework.com/docs/api/components/toolbar/Header/
+
+// ion-footer
+// https://ionicframework.com/docs/api/components/toolbar/Footer/
+
+.toolbar-background {
+  background: color($colors, secondary);
+  color: color($colors, white);
+}
+
+.back-button {
+  color: color($colors, white);
+}
+
+.toolbar {
+  color: color($colors, white);
+}
+
+.toolbar-title {
+  color: color($colors, white);
+  overflow: visible;
+}
+
+.bar-buttons button {
+  font-weight: bold;
+  color: color($colors, white);
+  
+  &[icon-only] {
+    font-size: 27px;
+  }
 }
