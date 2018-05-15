@@ -1,0 +1,16 @@
+circle-cell {
+  
+  .circle-cell {
+    min-height: 100px;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    background: color($colors, special);
+    color: color($colors, primary);
+  } 
+  
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

@@ -11,6 +11,7 @@ import { StyleSheetPage } from '../pages/stylesheet/stylesheet';
 
 // COMPONENTS
 import { ProfilePic } from '../components/profile-pic/profile-pic';
+import { CircleCell } from '../components/circle-cell/circle-cell';
 
 // PROVIDERS
 import { AssetsService } from '../providers/assets-service/assets-service';
@@ -20,7 +21,8 @@ import { AssetsService } from '../providers/assets-service/assets-service';
     MyApp,
     StyleSheetPage,
     
-    ProfilePic
+    ProfilePic,
+    CircleCell
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { AssetsService } from '../providers/assets-service/assets-service';
     MyApp,
     StyleSheetPage,
     
-    ProfilePic
+    ProfilePic,
+    CircleCell
   ],
   providers: [
     StatusBar,
