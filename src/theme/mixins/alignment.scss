@@ -1,0 +1,48 @@
+// --------------------------------------------------
+// Alignment mixins
+// --------------------------------------------------
+
+@mixin absolute-center($abCW, $abCH){
+  width: $abCW;
+  height: $abCH;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($abCH/2);
+  margin-left: -($abCW/2);
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin center-align {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin no-align {
+  position: inherit;
+  top: 0;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}

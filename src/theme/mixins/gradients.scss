@@ -1,0 +1,57 @@
+// --------------------------------------------------
+// Gradient mixins
+// --------------------------------------------------
+
+
+@mixin linear-gradient($startcolor, $stopcolor) {
+  @include linear-gradient-top($startcolor, $stopcolor);
+}
+@mixin linear-gradient-top($startcolor, $stopcolor) {
+  background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0, $startcolor), color-stop(1, $stopcolor));//for old webkit syntax
+  @include gradient($startcolor, $stopcolor, 180deg, mix($startcolor, $stopcolor, 60%));
+}
+@mixin linear-gradient-top-three($startcolor, $middlecolor, $stopcolor) {
+  background-color: $middlecolor;
+  background: -moz-linear-gradient(top, $startcolor 0%, $middlecolor 50%, $stopcolor 100%);
+  background: -webkit-linear-gradient(linear, left top, left bottom, color-stop(0%,$startcolor), color-stop(50%,$middlecolor), color-stop(100%,$stopcolor));
+  background: -webkit-linear-gradient(top, $startcolor 0%, $middlecolor 50%, $stopcolor 100%);
+  background: -o-linear-gradient(top, $startcolor 0%, $middlecolor 50%, $stopcolor 100%);
+  background: -ms-linear-gradient(top, $startcolor 0%, $middlecolor 50%, $stopcolor 100%);
+  background: linear-gradient(to bottom, $startcolor 0%, $middlecolor 50%, $stopcolor 100%);
+}
+@mixin linear-gradient-left($startcolor, $stopcolor) {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, $startcolor), color-stop(1, $stopcolor));//for old webkit syntax
+  @include gradient($startcolor, $stopcolor, 90deg, mix($startcolor, $stopcolor, 60%));
+}
+@mixin linear-gradient-top-diagonal($startcolor, $stopcolor) {
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, $startcolor), color-stop(1, $stopcolor));//for old webkit syntax
+  @include gradient($startcolor, $stopcolor, 135deg, mix($startcolor, $stopcolor, 60%));
+}
+@mixin linear-gradient-bottom-diagonal($startcolor, $stopcolor) {
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, $startcolor), color-stop(1, $stopcolor));//for old webkit syntax
+  @include gradient($startcolor, $stopcolor, 45deg, mix($startcolor, $stopcolor, 60%));
+}
+@mixin gradient($startcolor, $stopcolor, $angle, $backgroundcolor) {
+  background-color: $backgroundcolor;
+  background-image: -webkit-linear-gradient(450 - $angle, $startcolor, $stopcolor);
+  background-image: -o-linear-gradient(450 - $angle, $startcolor, $stopcolor);
+  background-image: -moz-linear-gradient(450 - $angle, $startcolor, $stopcolor);
+  background-image: linear-gradient($angle, $startcolor, $stopcolor);
+}
+@mixin radial-gradient($innercolor, $outercolor) {
+  background: radial-gradient($innercolor 0%, $innercolor 40%, $outercolor 95%);
+  // Opera does not support radial gradient
+}
+@mixin radial-gradient-soft($innercolor, $outercolor) {
+  background: radial-gradient($innercolor 0%, $innercolor 20%, $outercolor 60%);
+  // Opera does not support radial gradient
+}
+@mixin radial-gradient-hard($innercolor, $outercolor) {
+  background: radial-gradient($innercolor 0%, $innercolor 62%, $outercolor 95%);
+  // Opera does not support radial gradient
+}
+@mixin striped-bg($bg-color: #ccc, $darken-amount: 5%, $stripe-color: darken($bg-color, $darken-amount)){
+  background-color: $bg-color;
+  @include background-image(linear-gradient(-45deg, $stripe-color 25%, transparent 25%, transparent 50%, $stripe-color 50%, $stripe-color 75%, transparent 75%, transparent));
+  background-size: 40px 40px;
+}
