@@ -1,0 +1,16 @@
+profile-pic {
+  
+  .profile-pic {
+    max-width: 150px;
+    max-height: 150px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid color($colors, primary);
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}

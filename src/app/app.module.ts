@@ -5,13 +5,22 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+
+// PAGES
 import { StyleSheetPage } from '../pages/stylesheet/stylesheet';
+
+// COMPONENTS
+import { ProfilePic } from '../components/profile-pic/profile-pic';
+
+// PROVIDERS
+import { AssetsService } from '../providers/assets-service/assets-service';
 
 @NgModule({
   declarations: [
     MyApp,
-    StyleSheetPage
+    StyleSheetPage,
+    
+    ProfilePic
   ],
   imports: [
     BrowserModule,
@@ -20,11 +29,14 @@ import { StyleSheetPage } from '../pages/stylesheet/stylesheet';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    StyleSheetPage
+    StyleSheetPage,
+    
+    ProfilePic
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    AssetsService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
