@@ -1,5 +1,10 @@
 page-stylesheet {
   section {
-    margin-bottom: 15px;
+    margin: 0px -15px;
+    padding: 5px 15px;
+  }
+  
+  .bg-primary, .bg-secondary {
+    color: color($colors, white);
   }
 }
