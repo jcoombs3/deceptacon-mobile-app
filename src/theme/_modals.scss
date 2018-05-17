@@ -1,0 +1,83 @@
+@mixin modal-primary() {
+  
+  ion-header .toolbar-background, 
+  ion-footer .toolbar-background {
+    background: color($colors, primary);
+    color: color($colors, white);
+  }
+  
+  .toolbar-title, .bar-buttons button {
+    color: color($colors, white);
+  }
+  
+  ion-content {
+    @include linear-gradient-bottom-diagonal-three(color($colors, primary), darken(color($colors, primary), 2.5%), darken(color($colors, primary), 5%));
+  }
+  
+  .label, ion-input, a {
+    color: color($colors, white);
+  }
+}
+
+@mixin modal-secondary() {
+  
+  ion-header .toolbar-background, 
+  ion-footer .toolbar-background {
+    background: color($colors, secondary);
+    color: color($colors, white);
+  }
+  
+  .toolbar-title, .bar-buttons button {
+    color: color($colors, white);
+  }
+  
+  ion-content {
+    @include linear-gradient-bottom-diagonal-three(color($colors, secondary), darken(color($colors, secondary), 2.5%), darken(color($colors, secondary), 5%));
+  }
+  
+  .label, ion-input, a {
+    color: color($colors, white);
+  }
+}
+
+@mixin modal-special() {
+  
+  ion-header .toolbar-background, 
+  ion-footer .toolbar-background {
+    background: color($colors, special);
+    color: color($colors, primary);
+  }
+  
+  .toolbar-title, .bar-buttons button {
+    color: color($colors, primary);
+  }
+  
+  ion-content {
+    @include linear-gradient-bottom-diagonal-three(color($colors, special), darken(color($colors, special), 2.5%), darken(color($colors, special), 5%));
+  }
+  
+  .label, ion-input, a {
+    color: color($colors, primary);
+  }
+}
+
+@mixin modal-white() {
+  
+  ion-header .toolbar-background, 
+  ion-footer .toolbar-background {
+    background: color($colors, white);
+    color: color($colors, primary);
+  }
+  
+  .toolbar-title, .bar-buttons button {
+    color: color($colors, primary);
+  }
+  
+  ion-content {
+    @include linear-gradient-bottom-diagonal-three(color($colors, white), darken(color($colors, white), 2.5%), darken(color($colors, white), 5%));
+  }
+  
+  .label, ion-input, a {
+    color: color($colors, primary);
+  }
+}

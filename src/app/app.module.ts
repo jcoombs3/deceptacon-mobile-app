@@ -9,6 +9,9 @@ import { MyApp } from './app.component';
 // PAGES
 import { StyleSheetPage } from '../pages/stylesheet/stylesheet';
 
+// MODALS
+import { ChangeProfilePicModal } from '../modals/change-profile-pic/change-profile-pic';
+
 // COMPONENTS
 import { ProfilePic } from '../components/profile-pic/profile-pic';
 import { CircleCell } from '../components/circle-cell/circle-cell';
@@ -21,6 +24,8 @@ import { AssetsService } from '../providers/assets-service/assets-service';
     MyApp,
     StyleSheetPage,
     
+    ChangeProfilePicModal,
+    
     ProfilePic,
     CircleCell
   ],
@@ -32,6 +37,8 @@ import { AssetsService } from '../providers/assets-service/assets-service';
   entryComponents: [
     MyApp,
     StyleSheetPage,
+    
+    ChangeProfilePicModal,
     
     ProfilePic,
     CircleCell

@@ -1,0 +1,7 @@
+modal-change-profile-pic {
+  @include modal-secondary();
+
+  ion-grid {
+    text-align: center;
+  }
+}

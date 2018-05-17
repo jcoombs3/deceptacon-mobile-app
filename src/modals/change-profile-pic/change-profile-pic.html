@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Update Profile Picture
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="cancel()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <profile-pic picture="{{picture}}" color="{{color}}"></profile-pic>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button>
+          <img [src]="assets.getChangeProfileUrl() + 'silhouette.png'">
+        </button>
+      </ion-col>
+      <ion-col>
+        <button>
+          <img [src]="assets.getChangeProfileUrl() + 'change-clothes.png'">
+        </button>
+      </ion-col>
+      <ion-col>
+        <button>
+          <img [src]="assets.getChangeProfileUrl() + 'change-bg.png'">
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button (click)="save()">
+        Save
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-footer>

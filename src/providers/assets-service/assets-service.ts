@@ -12,7 +12,7 @@ export class AssetsService {
     return this.assetsUrl + 'profile/';
   }
   
-  getBackgroundUrl() {
-    return this.assetsUrl + 'bg/';
+  getChangeProfileUrl() {
+    return this.assetsUrl + 'change-profile/';
   }
 }
