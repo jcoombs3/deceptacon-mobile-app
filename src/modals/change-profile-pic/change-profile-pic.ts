@@ -1,8 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, ViewController, NavParams, Slides, ToastController } from 'ionic-angular';
 
-import { StatusBar } from '@ionic-native/status-bar';
-
 // PROVIDERS
 import { AssetsService } from '../../providers/assets-service/assets-service';
 
@@ -18,7 +16,6 @@ export class ChangeProfilePicModal {
   
   constructor(
     public platform: Platform,
-    public statusBar: StatusBar,
     public viewCtrl: ViewController, 
     public toastCtrl: ToastController,
     public navParams: NavParams, 
@@ -29,20 +26,23 @@ export class ChangeProfilePicModal {
   }
   
   ionViewWillEnter() {
-    this.slides.slideTo(1, 0, null);
-    if (this.platform.is('cordova')) {
-      this.statusBar.styleDefault(); 
-    }
+    this.slideTo(1, 0);
   }
   
-  ionViewWillLeave() {
-    if (this.platform.is('cordova')) {
-      this.statusBar.styleLightContent(); 
-    }
+  slideTo(idx, animTime) {
+    this.slides.lockSwipes(false);
+    this.slides.slideTo(idx, animTime, null);
+    this.slides.lockSwipes(true);
   }
   
   cancel() {
-    this.viewCtrl.dismiss();
+    switch(this.slides.getActiveIndex()) {
+      case 1: 
+        this.viewCtrl.dismiss();
+        break;
+      default: 
+        this.slideTo(1, 300);
+    }
   }
   
   save() {
@@ -57,12 +57,12 @@ export class ChangeProfilePicModal {
   } 
   
   changeAvatar() {
-    this.slides.slideTo(0, 300, null);
+    this.slideTo(0, 300);
   }
   
   selectAvatar(picture) {
     this.picture = picture;
-    this.slides.slideTo(1, 300, null);
+    this.slideTo(1, 300);
   }
   
   changeAvatarColor() {
@@ -81,11 +81,11 @@ export class ChangeProfilePicModal {
   }
   
   changeBgColor() {
-    this.slides.slideTo(2, 300, null);
+    this.slideTo(2, 300);
   }
   
   setBgColor(color) {
     this.color = color;
-    this.slides.slideTo(1, 300, null);
+    this.slideTo(1, 300);
   }
 }
