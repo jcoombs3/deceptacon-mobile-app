@@ -49,3 +49,14 @@ button[ion-button][class*="-white "] {
     font-size: 27px;
   }
 }
+
+// ion-toast
+// https://ionicframework.com/docs/api/components/toast/ToastController/
+
+ion-toast, .toast-ios, .toast-android {
+  
+  &.error .toast-wrapper {
+    background: color($colors, highlight);
+    border-color: color($colors, white);
+  }
+}

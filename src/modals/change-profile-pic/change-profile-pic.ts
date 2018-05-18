@@ -46,7 +46,6 @@ export class ChangeProfilePicModal {
   }
   
   save() {
-    console.warn('')
     let toast = this.toastCtrl.create({
       message: 'Profile Picture Updated',
       duration: 2000,
@@ -67,6 +66,13 @@ export class ChangeProfilePicModal {
   }
   
   changeAvatarColor() {
+    let toast = this.toastCtrl.create({
+      message: 'TODO: changeAvatarColor()',
+      duration: 2000,
+      position: 'top',
+      cssClass: 'error'
+    });
+    toast.present();
     console.log('++ changeAvatarColor');
   }
   
