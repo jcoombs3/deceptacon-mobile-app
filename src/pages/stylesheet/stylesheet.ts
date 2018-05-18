@@ -10,8 +10,8 @@ import { ChangeProfilePicModal } from '../../modals/change-profile-pic/change-pr
 })
 export class StyleSheetPage {
   user: any = {
-    color: 'green',
-    picture: 'Witch.png'
+    color: 'orange',
+    picture: 'Werewolf.png'
   };
 
   constructor(

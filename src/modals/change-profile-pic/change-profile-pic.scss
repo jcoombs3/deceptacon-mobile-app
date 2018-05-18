@@ -15,15 +15,11 @@ modal-change-profile-pic {
   }
   
   .profile-pic {
-    margin: 25px auto;
-    
-    @include media($Mobile_sm...) {
-      margin: 15px auto;
-    }
+    margin: 0 auto;
+    border-color: color($colors, white);
   }
   
   ion-grid {
-    @include vertical-align();
     text-align: center;
     color: color($colors, white);
     
@@ -31,6 +27,11 @@ modal-change-profile-pic {
       background: none;
       border-radius: none;
       box-shadow: none;
+      @include transition(opacity 300ms ease);
+      
+      &:active {
+        opacity: 0.5;
+      }
     }
   }
 }

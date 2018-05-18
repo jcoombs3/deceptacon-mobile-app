@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Platform, ViewController, NavParams, ToastController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Platform, ViewController, NavParams, Slides, ToastController } from 'ionic-angular';
 
 import { StatusBar } from '@ionic-native/status-bar';
 
@@ -14,6 +14,7 @@ import { AssetsService } from '../../providers/assets-service/assets-service';
 export class ChangeProfilePicModal {
   color: any;
   picture: any;
+  @ViewChild(Slides) slides: Slides;
   
   constructor(
     public platform: Platform,
@@ -28,6 +29,7 @@ export class ChangeProfilePicModal {
   }
   
   ionViewWillEnter() {
+    this.slides.slideTo(1, 0, null);
     if (this.platform.is('cordova')) {
       this.statusBar.styleDefault(); 
     }
@@ -44,6 +46,7 @@ export class ChangeProfilePicModal {
   }
   
   save() {
+    console.warn('')
     let toast = this.toastCtrl.create({
       message: 'Profile Picture Updated',
       duration: 2000,
@@ -55,14 +58,28 @@ export class ChangeProfilePicModal {
   } 
   
   changeAvatar() {
-    console.log('++ changeAvatar');
+    this.slides.slideTo(0, 300, null);
+  }
+  
+  selectAvatar(picture) {
+    this.picture = picture;
+    this.slides.slideTo(1, 300, null);
   }
   
   changeAvatarColor() {
     console.log('++ changeAvatarColor');
   }
   
+  selectAvatarColor() {
+    console.log('++ selectAvatarColor');
+  }
+  
   changeBgColor() {
-    console.log('++ changeBgColor');
+    this.slides.slideTo(2, 300, null);
+  }
+  
+  setBgColor(color) {
+    this.color = color;
+    this.slides.slideTo(1, 300, null);
   }
 }

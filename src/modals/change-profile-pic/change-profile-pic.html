@@ -13,39 +13,159 @@
 
 <ion-content no-bounce>
   <div class="main-container">
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <profile-pic picture="{{picture}}" color="{{color}}"></profile-pic>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <div>
-            <button (click)="changeAvatar()"><img [src]="assets.getChangeProfileUrl() + 'silhouette.png'" /></button>
-          </div>
-          <div>
-            <h3>Avatar</h3>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>
-            <button (click)="changeAvatarColor()"><img [src]="assets.getChangeProfileUrl() + 'change-clothes.png'" /></button>
-          </div>
-          <div>
-            <h3>Avatar Color</h3>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>
-            <button (click)="changeBgColor()"><img [src]="assets.getChangeProfileUrl() + 'change-bg.png'" /></button>
-          </div>
-          <div>
-            <h3>BG Color</h3>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <ion-slides>
+      <ion-slide class="slide-change-avatar">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <profile-pic picture="BodyGuard.png" color="{{color}}"
+                           (click)="selectAvatar('BodyGuard.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="CultLeader.png" color="{{color}}"
+                           (click)="selectAvatar('CultLeader.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="Cupid.png" color="{{color}}"
+                           (click)="selectAvatar('Cupid.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="Drunk.png" color="{{color}}"
+                           (click)="selectAvatar('Drunk.png')"></profile-pic>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <profile-pic picture="FrankensteinMonster.png" color="{{color}}"
+                           (click)="selectAvatar('FrankensteinMonster.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="Huntress.png" color="{{color}}"
+                           (click)="selectAvatar('Huntress.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="Lycan.png" color="{{color}}"
+                           (click)="selectAvatar('Lycan.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="Seer.png" color="{{color}}"
+                           (click)="selectAvatar('Seer.png')"></profile-pic>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <profile-pic picture="Sorcerer.png" color="{{color}}"
+                           (click)="selectAvatar('Sorcerer.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="ToughGuy.png" color="{{color}}"
+                           (click)="selectAvatar('ToughGuy.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="Vampire.png" color="{{color}}"
+                           (click)="selectAvatar('Vampire.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="VillagerF.png" color="{{color}}"
+                           (click)="selectAvatar('VillagerF.png')"></profile-pic>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <profile-pic picture="VillagerM.png" color="{{color}}"
+                           (click)="selectAvatar('VillagerM.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="Werewolf.png" color="{{color}}"
+                           (click)="selectAvatar('Werewolf.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="Witch.png" color="{{color}}"
+                           (click)="selectAvatar('Witch.png')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="WolfCub.png" color="{{color}}"
+                           (click)="selectAvatar('WolfCub.png')"></profile-pic>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide class="slide-change-avatar-color">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <profile-pic picture="{{picture}}" color="{{color}}"></profile-pic>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <div>
+                <button (click)="changeAvatar()"><img [src]="assets.getChangeProfileUrl() + 'silhouette.png'" /></button>
+              </div>
+              <div>
+                <h3>Avatar</h3>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <button (click)="changeAvatarColor()"><img [src]="assets.getChangeProfileUrl() + 'change-clothes.png'" /></button>
+              </div>
+              <div>
+                <h3>Avatar Color</h3>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <button (click)="changeBgColor()"><img [src]="assets.getChangeProfileUrl() + 'change-bg.png'" /></button>
+              </div>
+              <div>
+                <h3>BG Color</h3>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide class="slide-change-bg-color">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <profile-pic picture="{{picture}}" color="primary"
+                           (click)="setBgColor('primary')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="{{picture}}" color="secondary"
+                           (click)="setBgColor('primary')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="{{picture}}" color="special"
+                           (click)="setBgColor('primary')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="{{picture}}" color="orange"
+                           (click)="setBgColor('orange')"></profile-pic>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <profile-pic picture="{{picture}}" color="yellow"
+                           (click)="setBgColor('yellow')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="{{picture}}" color="cyan"
+                           (click)="setBgColor('cyan')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="{{picture}}" color="magenta"
+                           (click)="setBgColor('magenta')"></profile-pic>
+            </ion-col>
+            <ion-col>
+              <profile-pic picture="{{picture}}" color="green"
+                           (click)="setBgColor('green')"></profile-pic>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
   </div>
   <div class="btn-container">
     <button ion-button color="white" (click)="save()">
