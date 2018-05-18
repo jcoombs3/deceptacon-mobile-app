@@ -1,7 +1,36 @@
 modal-change-profile-pic {
   @include modal-secondary();
-
+  
+  .main-container {
+    height: 80%;
+  }
+  
+  .btn-container {
+    height: 20%;
+    
+    button[ion-button] {
+      @include center-align();
+      width: 75%;
+    }
+  }
+  
+  .profile-pic {
+    margin: 25px auto;
+    
+    @include media($Mobile_sm...) {
+      margin: 15px auto;
+    }
+  }
+  
   ion-grid {
+    @include vertical-align();
     text-align: center;
+    color: color($colors, white);
+    
+    button {
+      background: none;
+      border-radius: none;
+      box-shadow: none;
+    }
   }
 }

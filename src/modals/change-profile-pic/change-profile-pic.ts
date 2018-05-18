@@ -39,14 +39,6 @@ export class ChangeProfilePicModal {
     }
   }
   
-  updatePicture(pic: string) {
-    this.picture = pic;
-  }
-  
-  updateColor(color: string) {
-    this.color = color;
-  }
-  
   cancel() {
     this.viewCtrl.dismiss();
   }
@@ -61,4 +53,16 @@ export class ChangeProfilePicModal {
     toast.present();
     this.viewCtrl.dismiss(this);
   } 
+  
+  changeAvatar() {
+    console.log('++ changeAvatar');
+  }
+  
+  changeAvatarColor() {
+    console.log('++ changeAvatarColor');
+  }
+  
+  changeBgColor() {
+    console.log('++ changeBgColor');
+  }
 }
