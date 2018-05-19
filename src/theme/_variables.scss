@@ -47,11 +47,23 @@ $profile: (
   secondary: color($colors, secondary),
   special: color($colors, special),
   // ---------------------------
+  // v1
   orange: color($colors, highlight),
   yellow: #FFFD93,
   cyan: #1FE0D0,
   magenta: #FF3F7F,
   green: #D8F793,
+  // ---------------------------
+  // v2
+  pink: #FF84E8, //#FFA9E7
+  brown: #706563,
+  maroon: #E03616,
+  blue: #004BA8,
+  salmon: #EF6F6C,
+  purple: #9FA0FF,
+  red: #E63946,
+  darkgray: #221E22,
+  tan: #D8BFAA,
   // ---------------------------
   white: color($colors, white),
   black: color($colors, black),
