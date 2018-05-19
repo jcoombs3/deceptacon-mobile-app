@@ -3,6 +3,7 @@ import { NavController, ModalController } from 'ionic-angular';
 
 // MODALS
 import { ChangeProfilePicModal } from '../../modals/change-profile-pic/change-profile-pic';
+import { CodeOfConductModal } from '../../modals/code-of-conduct/code-of-conduct';
 
 @Component({
   selector: 'page-stylesheet',
@@ -30,6 +31,11 @@ export class StyleSheetPage {
       }
     });
     changeProfilePicModal.present();
+  }
+  
+  openCodeOfConduct() {
+    const codeOfConductModal = this.modalCtrl.create(CodeOfConductModal);
+    codeOfConductModal.present();
   }
 
 }

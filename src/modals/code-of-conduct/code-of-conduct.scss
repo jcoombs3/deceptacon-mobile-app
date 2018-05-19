@@ -1,0 +1,29 @@
+modal-code-of-conduct {
+  @include modal-white();
+  
+  p:first-child {
+    margin-top: 0;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .conduct-header {
+    background: color($colors_lt, primary);
+    border-top: 2px solid color($colors, primary);
+    border-bottom: 2px solid color($colors, primary);
+    margin: 0px -16px;
+    text-align: center;
+    padding: 16px 0px;
+    @include box-shadow(0 1px 3px color($colors, primary));
+     
+    img {
+      max-width: 50%;
+    }
+  }
+  
+  .h-main {
+    text-align: center;
+  }
+}

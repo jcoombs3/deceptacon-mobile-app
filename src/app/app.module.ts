@@ -11,6 +11,7 @@ import { StyleSheetPage } from '../pages/stylesheet/stylesheet';
 
 // MODALS
 import { ChangeProfilePicModal } from '../modals/change-profile-pic/change-profile-pic';
+import { CodeOfConductModal } from '../modals/code-of-conduct/code-of-conduct';
 
 // COMPONENTS
 import { ProfilePic } from '../components/profile-pic/profile-pic';
@@ -25,6 +26,7 @@ import { AssetsService } from '../providers/assets-service/assets-service';
     StyleSheetPage,
     
     ChangeProfilePicModal,
+    CodeOfConductModal,
     
     ProfilePic,
     CircleCell
@@ -39,6 +41,7 @@ import { AssetsService } from '../providers/assets-service/assets-service';
     StyleSheetPage,
     
     ChangeProfilePicModal,
+    CodeOfConductModal,
     
     ProfilePic,
     CircleCell

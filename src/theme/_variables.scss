@@ -39,7 +39,14 @@ $colors: (
   special: #EBE4CB,
   highlight: #FF6C3F,
   white: #FFFFFF,
-  black: #211A1D,
+  black: #211A1D
+);
+
+$colors_lt: (
+  primary: lighten(color($colors, primary), 35%),
+  secondary: lighten(color($colors, secondary), 35%),
+  special: lighten(color($colors, special), 35%),
+  highlight: lighten(color($colors, highlight), 35%)
 );
 
 $profile: (
