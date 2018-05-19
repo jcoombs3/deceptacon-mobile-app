@@ -3,6 +3,7 @@ modal-change-profile-pic {
   
   .main-container {
     height: 80%;
+    position: relative;
   }
   
   .btn-container {
@@ -33,5 +34,34 @@ modal-change-profile-pic {
         opacity: 0.5;
       }
     }
+  }
+  
+  .popup-change-avatar-color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(color($colors, black), 0.75);
+    z-index: 50;
+    pointer-events: none;
+    display: none;
+    
+    &.active {
+      pointer-events: all;
+      display: block;
+    }
+  
+    @include media($Mobile_sm...) {
+      .profile-pic {
+        max-width: 90px;
+        max-height: 90px;
+      }
+    }
+  }
+  
+  .popup-change-avatar-color-container {
+    @include vertical-align();
+    margin-top: -35%;
   }
 }

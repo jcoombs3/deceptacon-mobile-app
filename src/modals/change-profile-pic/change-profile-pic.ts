@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, ViewController, NavParams, Slides, ToastController } from 'ionic-angular';
+import { Platform, ViewController, NavParams, Slides } from 'ionic-angular';
 
 // PROVIDERS
 import { AssetsService } from '../../providers/assets-service/assets-service';
@@ -12,12 +12,12 @@ import { AssetsService } from '../../providers/assets-service/assets-service';
 export class ChangeProfilePicModal {
   color: any;
   picture: any;
+  showChangeAvatarColor: boolean = false;
   @ViewChild(Slides) slides: Slides;
   
   constructor(
     public platform: Platform,
     public viewCtrl: ViewController, 
-    public toastCtrl: ToastController,
     public navParams: NavParams, 
     public assets: AssetsService
   ) {
@@ -36,23 +36,20 @@ export class ChangeProfilePicModal {
   }
   
   cancel() {
-    switch(this.slides.getActiveIndex()) {
-      case 1: 
-        this.viewCtrl.dismiss();
-        break;
-      default: 
-        this.slideTo(1, 300);
+    if (!this.showChangeAvatarColor) {
+      switch(this.slides.getActiveIndex()) {
+        case 1: 
+          this.viewCtrl.dismiss();
+          break;
+        default: 
+          this.slideTo(1, 300);
+      }
+    } else {
+      this.showChangeAvatarColor = false;
     }
   }
   
   save() {
-    let toast = this.toastCtrl.create({
-      message: 'Profile Picture Updated',
-      duration: 2000,
-      position: 'top',
-      showCloseButton: true
-    });
-    toast.present();
     this.viewCtrl.dismiss(this);
   } 
   
@@ -66,18 +63,12 @@ export class ChangeProfilePicModal {
   }
   
   changeAvatarColor() {
-    let toast = this.toastCtrl.create({
-      message: 'TODO: changeAvatarColor()',
-      duration: 2000,
-      position: 'top',
-      cssClass: 'error'
-    });
-    toast.present();
-    console.log('++ changeAvatarColor');
+    this.showChangeAvatarColor = true;
   }
   
-  selectAvatarColor() {
-    console.log('++ selectAvatarColor');
+  selectAvatarColor(picture) {
+    this.picture = picture;
+    this.showChangeAvatarColor = false;
   }
   
   changeBgColor() {
