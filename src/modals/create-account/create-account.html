@@ -19,7 +19,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <profile-pic [picture]="villager.picture" [color]="villager.color"></profile-pic>
+        <profile-pic [picture]="villager.picture" [color]="villager.color"  (click)="changeProfilePic(villager)"></profile-pic>
       </ion-col>
       <ion-col [ngClass]="{'not-ready': !villager.pin}">
         TODO: PIN
