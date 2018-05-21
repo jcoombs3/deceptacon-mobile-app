@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 
 // MODALS
+import { CreateAccountModal } from '../../modals/create-account/create-account';
 import { ChangeProfilePicModal } from '../../modals/change-profile-pic/change-profile-pic';
 import { CodeOfConductModal } from '../../modals/code-of-conduct/code-of-conduct';
 
@@ -20,6 +21,11 @@ export class StyleSheetPage {
     public modalCtrl: ModalController
   ) {
 
+  }
+  
+  openCreateAccount() {
+    const createAccountModal = this.modalCtrl.create(CreateAccountModal);
+    createAccountModal.present();
   }
   
   openChangeProfilePic() {

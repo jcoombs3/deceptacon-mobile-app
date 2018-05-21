@@ -10,6 +10,7 @@ import { MyApp } from './app.component';
 import { StyleSheetPage } from '../pages/stylesheet/stylesheet';
 
 // MODALS
+import { CreateAccountModal } from '../modals/create-account/create-account';
 import { ChangeProfilePicModal } from '../modals/change-profile-pic/change-profile-pic';
 import { CodeOfConductModal } from '../modals/code-of-conduct/code-of-conduct';
 
@@ -25,6 +26,7 @@ import { AssetsService } from '../providers/assets-service/assets-service';
     MyApp,
     StyleSheetPage,
     
+    CreateAccountModal,
     ChangeProfilePicModal,
     CodeOfConductModal,
     
@@ -40,6 +42,7 @@ import { AssetsService } from '../providers/assets-service/assets-service';
     MyApp,
     StyleSheetPage,
     
+    CreateAccountModal,
     ChangeProfilePicModal,
     CodeOfConductModal,
     
