@@ -1,4 +1,19 @@
 modal-create-account {
   @include modal-secondary();
   
+  p.introductory {
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  ion-col {
+    text-align: center;
+  }
+  
+  .profile-pic {
+    margin: 0 auto;
+    border-color: color($colors, white);
+  }
+  
 }

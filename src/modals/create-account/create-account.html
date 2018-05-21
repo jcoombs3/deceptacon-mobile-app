@@ -12,5 +12,26 @@
 </ion-header>
 
 <ion-content padding no-bounce>
-  Create Account
+  <p class="introductory">
+    This is your Decepta Con Profile. Once signed in, you can make future changes by going to 'My Profile'.
+  </p>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <profile-pic [picture]="villager.picture" [color]="villager.color"></profile-pic>
+      </ion-col>
+      <ion-col [ngClass]="{'not-ready': !villager.pin}">
+        TODO: PIN
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="account-profile-pic">
+        Tap to Change
+      </ion-col>
+      <ion-col>
+        // Tap to Change //
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
